@@ -1,0 +1,36 @@
+# Paste into a separate dashboard's raw configuration editor; replace the entity ID.
+views:
+  - title: Radioactivity
+    path: measurements
+    type: sections
+    max_columns: 2
+    sections:
+      - type: grid
+        column_span: 2
+        cards:
+          - type: gauge
+            entity: sensor.geiger_counter_0_radiation_cpm
+            name: Current activity
+            needle: true
+            min: 0
+            max: 100
+            tap_action:
+              action: more-info
+            grid_options:
+              columns: 12
+              rows: 5
+          - type: statistics-graph
+            title: CPM history
+            entities:
+              - sensor.geiger_counter_0_radiation_cpm
+            period: 5minute
+            days_to_show: 1
+            chart_type: line
+            stat_types:
+              - mean
+              - min
+              - max
+            hide_legend: true
+            grid_options:
+              columns: 12
+              rows: 5

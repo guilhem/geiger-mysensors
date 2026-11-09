@@ -1,0 +1,17 @@
+# Merge into configuration.yaml; replace entity IDs with those from your instance.
+homeassistant:
+  customize:
+    sensor.geiger_counter_0_radiation_cpm:
+      state_class: measurement
+      icon: mdi:radioactive
+    sensor.geiger_counter_0_geiger_ticks:
+      state_class: total_increasing
+      unit_of_measurement: pulses
+      icon: mdi:counter
+    sensor.geiger_counter_0_random_byte:
+      unit_of_measurement: byte
+      icon: mdi:dice-multiple
+    sensor.geiger_counter_0_random_samples:
+      state_class: total_increasing
+      unit_of_measurement: samples
+      icon: mdi:counter

@@ -1,0 +1,19 @@
+{
+  "release_version": "1.1.0",
+  "arduino_cli_required": "1.5.1",
+  "fqbn": "arduino:avr:uno",
+  "source_dependencies": {
+    "avr_core": {
+      "version": "1.8.8",
+      "filename": "avr-1.8.8.tar.bz2",
+      "url": "https://downloads.arduino.cc/cores/staging/avr-1.8.8.tar.bz2",
+      "sha256": "a234c2a43dcd01ce54be665806f183b8e6ec4e966d2e3e0c3358b63023d6390c"
+    },
+    "mysensors": {
+      "version": "2.3.2",
+      "filename": "MySensors-2.3.2.zip",
+      "url": "https://downloads.arduino.cc/libraries/github.com/mysensors/MySensors-2.3.2.zip",
+      "sha256": "966b797698ed232c3823863686e56f20e3cd60aba8441c0344a3941d0bd60ab9"
+    }
+  }
+}

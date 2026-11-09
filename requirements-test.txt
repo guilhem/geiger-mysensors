@@ -1,0 +1,6 @@
+# Required full check (must complete installation before running tests):
+# python -m pip install -r requirements-test.txt
+# python -m unittest discover -s tests -v
+# Without this dependency, only the controller contract suite skips.
+pymysensors==0.26.0
+PyYAML==6.0.3
